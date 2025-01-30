@@ -17,7 +17,7 @@ const Login = ({ setIsAuthenticated }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3001/login", {
+      const response = await fetch("https://blog-app-backend-75ae.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

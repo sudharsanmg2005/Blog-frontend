@@ -23,7 +23,7 @@ const NewRegister = () => {
       alert("Passwords don't match!");
     } else {
       await axios
-        .post("http://localhost:3001/register", {
+        .post("https://blog-app-backend-75ae.onrender.com/register", {
           uname: formData.username,
           email: formData.email,
           password: formData.password,

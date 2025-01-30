@@ -25,7 +25,7 @@ const CreateBlog = ({ blogs, setBlogs, setView }) => {
 
     try {
     
-      const response = await axios.post("http://localhost:3001/api/blogs", newBlog);
+      const response = await axios.post("https://blog-app-backend-75ae.onrender.com/api/blogs", newBlog);
 
       if (response.status === 201) {
         const updatedBlogs = [...blogs, response.data];
