@@ -1,0 +1,40 @@
+// import React, { useState } from "react";
+// import BlogList from "./components/BlogList";
+// import CreateBlog from "./components/CreateBlog";
+// import "./App.css"; // Import the CSS file
+
+// const App = () => {
+//   const [view, setView] = useState("list"); // 'list' or 'create'
+//   const [blogs, setBlogs] = useState([]); // Store blogs in state
+
+//   return (
+//     <div className="app">
+//       <header className="app-header">
+//         <h1>My Blog Website</h1>
+//         <nav className="nav-bar">
+//           <button
+//             className={`nav-button ${view === "list" ? "active" : ""}`}
+//             onClick={() => setView("list")}
+//           >
+//             View Blogs
+//           </button>
+//           <button
+//             className={`nav-button ${view === "create" ? "active" : ""}`}
+//             onClick={() => setView("create")}
+//           >
+//             Create Blog
+//           </button>
+//         </nav>
+//       </header>
+//       <main className="app-main">
+//         {view === "list" ? (
+//           <BlogList blogs={blogs} />
+//         ) : (
+//           <CreateBlog blogs={blogs} setBlogs={setBlogs} setView={setView} />
+//         )}
+//       </main>
+//     </div>
+//   );
+// };
+
+// export default App;
