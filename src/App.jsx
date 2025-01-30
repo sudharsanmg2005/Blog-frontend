@@ -13,7 +13,6 @@ const App = () => {
 
   return (
     <>
-      {/* The header is placed here and will appear only once */}
       <header
         style={{
           width: "100%",
@@ -27,7 +26,6 @@ const App = () => {
       </header>
 
       <div className="app" style={{ marginTop: "120px" }}>
-        {/* Conditional rendering based on authentication */}
         {!isAuthenticated ? (
           <div className="login-container">
             <Login setIsAuthenticated={setIsAuthenticated} />
